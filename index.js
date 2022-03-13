@@ -3,7 +3,7 @@
     https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/
 */
 
-var audioContext = new AudioContext();
+var audioContext = new AudioContext() || new webkitAudioContext();
 var oscillatorLeft;
 var oscillatorRight;
 var gainLeft, gainRight;
